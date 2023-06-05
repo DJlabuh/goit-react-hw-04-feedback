@@ -6,7 +6,11 @@ export const FeedbackOptions = ({ options, onUpdateStatus }) => {
     <FeedbackList>
       {options.map(option => (
         <li key={option}>
-          <FeedbackBtn type="button" typeName={option} onClick={() => onUpdateStatus(option)}>
+          <FeedbackBtn
+            type="button"
+            typeName={option}
+            onClick={() => onUpdateStatus(option)}
+          >
             {option}
           </FeedbackBtn>
         </li>

@@ -1,5 +1,9 @@
 import PropTypes from 'prop-types';
-import { StatisticsList, StatisticsItem, StatisticsCount } from './Statistics.styled';
+import {
+  StatisticsList,
+  StatisticsItem,
+  StatisticsCount,
+} from './Statistics.styled';
 
 export const Statistics = ({
   good,
@@ -23,7 +27,8 @@ export const Statistics = ({
         Total: <StatisticsCount>{total()}</StatisticsCount>
       </StatisticsItem>
       <StatisticsItem>
-        Positive feedback: <StatisticsCount>{positivePercentage()}%</StatisticsCount>
+        Positive feedback:{' '}
+        <StatisticsCount>{positivePercentage()}%</StatisticsCount>
       </StatisticsItem>
     </StatisticsList>
   );
